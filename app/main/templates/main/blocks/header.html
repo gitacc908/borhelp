@@ -1,0 +1,36 @@
+{% load i18n %}
+{% load static %}
+{% load tags %}
+
+<header id="header" class="fixed-top d-flex align-items-center {% if page == 'main' %}header-transparent{% endif %}">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <div class="logo">
+      <a href="{% url 'main:main' %}"><img src="{% static 'main/img/borispol-logo.png' %}" alt="" class="img-fluid"></a>
+    </div>
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_available_languages as LANGUAGES %}
+    {% get_language_info_list for LANGUAGES as languages %}
+      <select onchange="location = this.value;">
+          {% for language in languages %}
+          <option VALUE="{% format_current_url_with_lang_code request language.code LANGUAGE_CODE %}" {% if language.code == LANGUAGE_CODE %} selected{% endif %}>{{ language.name_local }}</option>
+          {% endfor %}
+      </select>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a {% if page == 'main' %}class="active"{% endif %} href="{% url 'main:main' %}">Головна</br>сторінка</a></li>
+        {% for page in pages %}
+        <li><a {% if page == 'migration' %}class="active"{% endif %} href="{% url 'main:detail' page.pk %}">{{ page.title }}</br></a></li>
+        {% endfor %}
+        <li><a {% if page == 'migration' %}class="active"{% endif %} href="{% url 'news:news' %}">blog</br></a></li>
+        <!-- <li><a {% if page == 'main' %}class="active"{% endif %} href="{% url 'main:main' %}">Головна</br>сторінка</a></li>
+        <li><a {% if page == 'migration' %}class="active"{% endif %} href="{% url 'main:migration' %}">Допомога</br>з переїздом</a></li>
+        <li><a {% if page == 'humanitarian' %}class="active"{% endif %} href="{% url 'main:humanitarian' %}">Гуманітарна</br>допомога</a></li>
+        <li><a {% if page == 'medical' %}class="active"{% endif %} href="{% url 'main:medical' %}">Ліки, памперси</br>дитяче харчування</a></li>
+        <li><a {% if page == 'contacts' %}class="active"{% endif %} href="{% url 'main:contacts' %}">Зворотній</br>зв'язок</a></li> -->
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+  </div>
+</header>

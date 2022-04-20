@@ -1,0 +1,36 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+  {% include 'main/blocks/breadcrumbs.html' %}
+
+  <section class="about" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="{% static 'main/img/migration.png' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <h3>У зв’язку з військовою агресією Російської Федерації проти України</h3>
+          <p>
+            Бориспільська міська рада допомагає мешканцям громади переїхати з міста у західному напрямку до міст
+            Вінниця, Хмельницький, Тернопіль, Львів
+          </p>
+          <p>
+            Просимо звертатися до кол-центру з 9:00 до 17:00 за телефонами:
+          </p>
+          <ul>
+            <li><i class="bi bi-telephone"></i> <a href="tel:+380674041313">+38 067 404 13 13</a></li>
+            <li><i class="bi bi-telephone"></i> <a href="tel:+380730916952">+38 073 091 69 52</a></li>
+            <li><i class="bi bi-telephone"></i> <a href="tel:+380506567317">+38 050 656 73 17</a></li>
+            <li><i class="bi bi-telephone"></i> <a href="tel:+380664265536">+38 066 426 55 36</a></li>
+          </ul>
+          <p>
+            Першочергово допомога надається мамам з дітьми, вагітним, людям похилого віку та особам з інвалідністю, які
+            не можуть самостійно пересуватися.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

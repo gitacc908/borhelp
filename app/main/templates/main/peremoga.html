@@ -1,0 +1,36 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+  {% include 'main/blocks/breadcrumbs.html' %}
+
+  <section class="about why-us section-bg contact" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-4 pt-lg-0 d-flex flex-column justify-content-center p-5">
+          <p>
+            Бориспільський волонтерскький центр "Перемога" приймає допомогу гуманітарними вантажами та матеріальною
+            підтримкою: карта Приват Банк 5168 7456 0596 0993 Яцюта
+          </p>
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-phone"></i></div>
+            <h4 class="title">Телефон</h4>
+            <p class="description"><a href="tel:+380987658311">+38 098 765 83 11</a><br/>
+              <a href="tel:+380935047296">+38 093 504 72 96</a></p>
+          </div>
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-pointer"></i></div>
+            <h4 class="title">Сайт</h4>
+            <p class="description"><a href="https://boryspilperemoga.com.ua" target="_blank">boryspilperemoga.com.ua</a><br/>
+              <a href="https://mapi.xpay.com.ua/uk/frame/widget/9fbaef1a-9bb3-4537-8980-2c65ab06261e" target="_blank">Для
+                благодійного внеску</a></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="{% static 'main/img/peremoga.png' %}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

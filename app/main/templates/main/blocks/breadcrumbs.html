@@ -1,0 +1,40 @@
+{% load i18n %}
+
+
+<section class="breadcrumbs">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      {% if page == 'peremoga' %}
+        <h1>Центр "Перемога"</h1>
+        <ol>
+          <li><a href="{% url 'main:main' %}">Головна</a></li>
+          <li>Центр "Перемога"</li>
+        </ol>
+      {% elif page == 'migration' %}
+        <h1>Допомога з переїздом</h1>
+        <ol>
+          <li><a href="{% url 'main:main' %}">Головна</a></li>
+          <li>Допомога з переїздом</li>
+        </ol>
+      {% elif page == 'medical' %}
+        <h1>Ліки, дитяче харчування</h1>
+        <ol>
+          <li><a href="{% url 'main:main' %}">Головна</a></li>
+          <li>Ліки, дитяче харчування</li>
+        </ol>
+      {% elif page == 'humanitarian' %}
+        <h1>Гуманітарна допомога</h1>
+        <ol>
+          <li><a href="{% url 'main:main' %}">Головна</a></li>
+          <li>Гуманітарна допомога</li>
+        </ol>
+      {% elif page == 'contacts' %}
+        <h1>Зворотній зв'язок</h1>
+        <ol>
+          <li><a href="{% url 'main:main' %}">Головна</a></li>
+          <li>Зворотній зв'язок</li>
+        </ol>
+      {% endif %}
+    </div>
+  </div>
+</section>

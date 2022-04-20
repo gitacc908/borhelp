@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+  {% include 'main/blocks/breadcrumbs.html' %}
+
+  <section class="about" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="{% static 'main/img/medical.png' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <h3>Центральна лікарня міста Бориспіль надає допомогу</h3>
+          <ul>
+            <li><i class="bi bi-check2-square"></i> Якщо у вас є необхідність у ліках (жарознижуючі, цукрознижуючі та
+              ін.) їх можуть надати безкоштовно при наявності у гуманітарній поставці. Для того щоб отримати ліки,
+              зверніться до адміністрації центральної лікарні міста.
+            </li>
+            <li><i class="bi bi-check2-square"></i> Якщо вам необхідно дитяче харчування чи памперси, звертайтесь до
+              адміністрації центральної лікарні. При собі майте свідоцтво про народження дитини. Необхідне для дітей
+              надають безкоштовно при наявності у гуманітарній поставці.
+            </li>
+          </ul>
+          <p>
+            За додатковою інформацією звертайтесь до Михайла Андрєєва <a href="tel:+380738743493">+38 073 874 34 93</a>
+          </p>
+          <p>
+            Якщо ви маєте можливість передати гуманітарний вантаж та матеріально підтримати, звертайтесь в
+            Бориспільський волонтерський центр "Перемога"
+          </p>
+          <a href="{% url 'main:peremoga' %}" class="btn-get-started animate__animated animate__fadeInUp">Хочу допомогти</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

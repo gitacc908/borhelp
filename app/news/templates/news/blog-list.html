@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+  {% include 'main/blocks/breadcrumbs.html' %}
+
+  {% for blog in blogs %}
+    {{ blog.title }}
+    {{ blog.image }}    
+    {{ blog.description }}
+    {{ blog.created }}    
+  {% endfor %}
+
+{% endblock%}

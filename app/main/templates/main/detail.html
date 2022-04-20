@@ -1,0 +1,39 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+  {% include 'main/blocks/breadcrumbs.html' %}
+
+  <section class="about why-us section-bg contact" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <p>
+           {{ page.title }}
+          </p>
+        <!-- <div class="col-lg-6 pt-4 pt-lg-0 d-flex flex-column justify-content-center p-5">
+          <p>
+            Якщо у вас є запитання чи пропозиції стосовно нашої діяльності чи сайту, звертайтеся за наступними номерами телефонів:
+          </p>
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-phone"></i></div>
+	    <h4 class="title">Михайло Андрєєв</h4>
+            <p class="description">депутат міської ради<br/>
+              <a target="_blank" href="https://www.instagram.com/datysho/">instagram</a><br/>
+              <a href="tel:+380738743493">+38 073 874 34 93</a></p>
+          </div>
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-phone"></i></div>
+            <h4 class="title">Олександр Кудря</h4>
+            <p class="description">помічник депутата<br/>
+              <a href="tel:+380738743494">+38 073 874 34 94</a></p>
+          </div>
+        </div> -->
+        {{ page.description|safe }}
+        <div class="col-lg-6">
+          <img src="{{ page.image.url }}" style="width: 300px; height: 300px;" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
