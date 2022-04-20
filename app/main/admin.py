@@ -1,12 +1,12 @@
 from django.contrib import admin
-from apps.main.models import Landing
+from main.models import Landing
 from django import forms
 from ckeditor.widgets import CKEditorWidget
 from modeltranslation.admin import TranslationAdmin
 
 
 class LandingForm(forms.ModelForm):
-    description = forms.CharField(widget=CKEditorWidget())
+    # description = forms.CharField(widget=CKEditorWidget())
     class Meta:
         model = Landing
         fields = ['title', 'image', 'description']

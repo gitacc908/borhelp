@@ -3,6 +3,6 @@ from .models import Landing
 
 
 class LandingTranslationOptions(TranslationOptions):
-    fields = ('title',)
+    fields = ('title', 'description')
 
 translator.register(Landing, LandingTranslationOptions)

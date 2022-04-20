@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from apps.main.models import Landing
+from main.models import Landing
 from django.http import HttpResponseNotFound
 
 

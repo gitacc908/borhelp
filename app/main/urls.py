@@ -1,6 +1,6 @@
 from django.urls import path
 
-from apps.main.views import main_page, contacts, humanitarian, medical, migration, peremoga, page_detail
+from main.views import main_page, contacts, humanitarian, medical, migration, peremoga, page_detail
 
 app_name = 'main'
 
