@@ -4,12 +4,59 @@
 
 {% block content %}
   {% include 'main/blocks/breadcrumbs.html' %}
+<!-- ======= Blog Section ======= -->
+<section class="breadcrumbs">
+  <div class="container">
 
-  {% for blog in blogs %}
-    {{ blog.title }}
-    {{ blog.image }}    
-    {{ blog.description }}
-    {{ blog.created }}    
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Новини</h2>
+
+      <ol>
+        <li><a href="index.html">Головна</a></li>
+        <li>Новини</li>
+      </ol>
+    </div>
+
+  </div>
+</section><!-- End Blog Section -->
+
+<!-- ======= Blog Section ======= -->
+<section id="blog" class="blog">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row">
+      {% for blog in blogs %}
+
+      <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+
+        <article class="entry">
+
+          <div class="entry-img">
+            {% if blog.image %}
+            <img src="{{ blog.image.url }}" alt="" class="img-fluid">
+            {% endif %}
+          </div>
+
+          <h2 class="entry-title">
+            <a href="{% url 'news:blog-detail' blog.pk %}">{{ blog.title|safe}}</a>
+          </h2>
+
+          <div class="entry-meta">
+            <ul>
+              <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <time datetime="2020-01-01">{{ blog.created|safe }}</time></li>
+              <li class="d-flex align-items-center"><i class="bi bi-eye"></i> 12 переглядів</li>
+            </ul>
+          </div>
+
+         
+
+        </article><!-- End blog entry -->
+  </div>
   {% endfor %}
+  
+
+<div class="row">
+
+</section><!-- End Blog Section -->
 
 {% endblock%}

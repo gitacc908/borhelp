@@ -9,12 +9,12 @@ class LandingForm(forms.ModelForm):
     # description = forms.CharField(widget=CKEditorWidget())
     class Meta:
         model = Landing
-        fields = ['title', 'image', 'description']
+        fields = ['title', 'description']
 
 
 @admin.register(Landing)
 class LandingAdmin(TranslationAdmin):
-    form = LandingForm
-    list_display = ['title', 'image', 'description']
+    # form = LandingForm
+    list_display = ['title', 'description']
     list_display_links = ['title']
     list_search = ['title']
