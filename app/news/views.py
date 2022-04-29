@@ -4,7 +4,7 @@ from .models import News
 
 def blog(request):
     blogs = News.objects.all()
-    return render(request, 'news/blog-list.html', {'blogs': blogs})
+    return render(request, 'news/blog-list.html', {'blogs': blogs, 'page': 'blogs'})
 
 
 def blog_detail(request, pk):

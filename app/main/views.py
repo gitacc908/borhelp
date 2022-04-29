@@ -27,9 +27,13 @@ def peremoga(request):
     return render(request, "main/peremoga.html", context={'page': 'peremoga'})
 
 
+def gallery(request):
+    return render(request, "main/gallery.html", context={'page': 'gallery'})
+
+
 def page_detail(request, pk):
     try:
         page = Landing.objects.get(id=pk)
     except:
         return HttpResponseNotFound("Not found")   
-    return render(request, 'main/detail.html', {'page': page})
+    return render(request, 'main/detail.html', {'page': page, 'current': 'page'})

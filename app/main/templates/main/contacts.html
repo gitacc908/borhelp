@@ -4,32 +4,44 @@
 
 {% block content %}
   {% include 'main/blocks/breadcrumbs.html' %}
-
-  <section class="about why-us section-bg contact" data-aos="fade-up">
+  <section class="about why-us section-bg contact aos-init aos-animate" data-aos="fade-up">
     <div class="container">
+
       <div class="row">
+    
         <div class="col-lg-6 pt-4 pt-lg-0 d-flex flex-column justify-content-center p-5">
-          <p>
-            Якщо у вас є запитання чи пропозиції стосовно нашої діяльності чи сайту, звертайтеся за наступними номерами телефонів:
+    <p>
+            Якщо у вас є запитання чи пропозиції, звертайтеся за наступними контактами:
           </p>
           <div class="icon-box">
             <div class="icon"><i class="bx bx-phone"></i></div>
-	    <h4 class="title">Михайло Андрєєв</h4>
-            <p class="description">депутат міської ради<br/>
-              <a target="_blank" href="https://www.instagram.com/datysho/">instagram</a><br/>
-              <a href="tel:+380738743493">+38 073 874 34 93</a></p>
+      <h4 class="title">Михайло Андрєєв</h4>
+            <p class="description">директор ГО<br>
+      <a href="tel:+380738743493">+38 073 874 34 93</a></p>
           </div>
+
           <div class="icon-box">
             <div class="icon"><i class="bx bx-phone"></i></div>
             <h4 class="title">Олександр Кудря</h4>
-            <p class="description">помічник депутата<br/>
-              <a href="tel:+380738743494">+38 073 874 34 94</a></p>
+            <p class="description">помічник<br>
+      <a href="tel:+380738743494">+38 073 874 34 94</a></p>
+
+          </div>
+    
+    <div class="icon-box">
+            <div class="icon"><i class="bx bx-envelope"></i></div>
+            <h4 class="title">E-mail</h4>
+            <p class="description">
+      <a href="mailto:office@dteam.foundation">office@dteam.foundation</a></p>
+
           </div>
         </div>
-        <div class="col-lg-6">
-          <img src="{% static 'main/img/ukraine.png' %}" class="img-fluid" alt="">
+    <div class="col-lg-6">
+          <img src="{% static 'img/ukraine.png' %}" class="img-fluid" alt="">
         </div>
+    
       </div>
+
     </div>
   </section>
 {% endblock content %}

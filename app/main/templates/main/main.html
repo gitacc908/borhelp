@@ -8,7 +8,12 @@
 
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h1 class="animate__animated animate__fadeInDown">Допомога громаді міста Бориспіль</h1>
+          <h1 class="animate__animated animate__fadeInDown">Громадська організація<br> «ДТІМ ФАУНДЕЙШН»</h1>
+          <p class="animate__animated animate__fadeInUp">Метою організації є матеріальна допомога Збройним силам України, іншим військовим формуванням, правоохоронним (спеціальним) органам, органам цивільного захисту, добровольчим формуванням територіальних громад, іншим особам, які забезпечують національну безпеку і оборону, відсіч і стримування збройної агресії іноземної держави, а також особам, які постраждали чи можуть постраждати від такої збройної агресії. Усі  наші ресурси направлені на допомогу! Просимо усіх доєднуватися!</p>
+          <a href="{% url 'main:humanitarian' %}" class="btn-get-started animate__animated animate__fadeInUp">Пожертвування</a>
+        </div>
+        <!-- <div class="carousel-container">
+          <h1 class="animate__animated animate__fadeInDown"></h1>
           <p class="animate__animated animate__fadeInUp">Офіційна платформа гуманітарного штабу Борисполя для
             забезпечення переїзду до західної частини України. Надання гуманітарної допомоги з їжею, медикаментами та
             найнеобхіднішим для усіх, хто цього потребує. Бориспіль робить усе необхідне для забезпечення не лише бійців
@@ -16,7 +21,7 @@
             маленькими дітьми.</p>
           <a href="{% url 'main:humanitarian' %}" class="btn-get-started animate__animated animate__fadeInUp">Як
             отримати допомогу</a>
-        </div>
+        </div> -->
       </div>
 
     </div>
@@ -25,7 +30,7 @@
 
 
 {% block content %}
-  <section class="services">
+  <!-- <section class="services">
     <div class="container">
 
       <div class="row">
@@ -64,10 +69,41 @@
       </div>
 
     </div>
+  </section> -->
+  <section class="services">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up">
+          <div class="icon-box icon-box-blue">
+            <div class="icon"><i class="bx bx-bus"></i></div>
+            <h4 class="title">Допомагаємо з переїздом</h4>
+            <p class="description">Шукаєте можливість виїхати? Потрібна допомога із пошуком автобуса чи машини? Звертайтесь до нашої організації, волонтери допоможуть вам якнайскоріше</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box icon-box-blue">
+            <div class="icon"><i class="bx bx-basket"></i></div>
+            <h4 class="title">Гуманітарна допомога</h4>
+            <p class="description">Збір коштів для людей які опинилися в скрутній ситуації та змушені зараз жити в умовах воєнного часу та дійсно потребують необхідної допомоги. Надання гуманітарної допомоги</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-box icon-box-blue">
+            <div class="icon"><i class="bx bx-shield-alt-2"></i></div>
+            <h4 class="title">Допомога ЗСУ</h4>
+            <p class="description">Збір коштів на забезпечення для наших захисників. Шукаємо постачальників, сплачуємо та доставляємо бронежилети, тепловізори, медикаменти, тактичний одяг </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
   </section>
 
-
-  <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+  <!-- <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 video-box">
@@ -84,6 +120,32 @@
             <p class="description">Кожна людина наразі має спраямувати свої зусилля та ресурси задля недопущення
               гуманітарної кризи</p>
           </div>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+  <section class="why-us section-bg aos-init aos-animate" data-aos="fade-up" date-aos-delay="200">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6 video-box">
+          <img src="{% static 'img/help.png' %}" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-body"></i></div>
+            <p class="description">Кожного дня ми докладаємо багато зусиль, щоб доставити гуманітарну допомогу для наших людей, які опинились у скрутній ситуації</p>
+          </div>
+
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-donate-heart"></i></div>
+            <p class="description">Кожна людина наразі має спраямувати свої зусилля та ресурси задля недопущення гуманітарної кризи та допомогти наши захисникам</p>
+
+          </div>
+
         </div>
       </div>
 

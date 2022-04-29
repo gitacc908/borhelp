@@ -1,0 +1,84 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+  {% include 'main/blocks/breadcrumbs.html' %}
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Галерея</h2>
+        <ol>
+          <li><a href="{% url 'main:main' %}">Головна</a></li>
+          <li>Галерея</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  <section class="portfolio">
+    <div class="container">
+
+      <div class="row portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" style="position: relative; height: 1158px;">
+
+        <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="position: absolute; left: 0px; top: 0px;">
+          <div class="portfolio-item">
+            <a href="{% static 'img/gallery/dtf-001.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img src="{% static 'img/gallery/dtf-001.jpg' %}" class="img-fluid" alt=""></a> 
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-wrap filter-web" style="position: absolute; left: 380px; top: 0px;">
+          <div class="portfolio-item">
+            <a href="{% static 'img/gallery/dtf-002.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img src="{% static 'img/gallery/dtf-002.jpg' %}" class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+
+        <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="position: absolute; left: 760px; top: 0px;">
+          <div class="portfolio-item">
+            <a href="{% static 'img/gallery/dtf-003.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img src="{% static 'img/gallery/dtf-003.jpg' %}" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-wrap filter-card" style="position: absolute; left: 0px; top: 386px;">
+          <div class="portfolio-item">
+             <a href="{% static 'img/gallery/dtf-004.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img src="{% static 'img/gallery/dtf-004.jpg' %}" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-wrap filter-web" style="position: absolute; left: 380px; top: 386px;">
+          <div class="portfolio-item">
+             <a href="{% static 'img/gallery/dtf-005.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img src="{% static 'img/gallery/dtf-005.jpg' %}" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-wrap filter-app" style="position: absolute; left: 760px; top: 386px;">
+          <div class="portfolio-item">
+            <a href="{% static 'img/gallery/dtf-006.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img src="{% static 'img/gallery/dtf-006.jpg' %}" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-wrap filter-card" style="position: absolute; left: 0px; top: 772px;">
+          <div class="portfolio-item">
+             <a href="{% static 'img/gallery/dtf-007.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img src="{% static 'img/gallery/dtf-007.jpg' %}" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-wrap filter-card" style="position: absolute; left: 380px; top: 772px;">
+          <div class="portfolio-item">
+            <a href="{% static 'img/gallery/dtf-008.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img src="{% static 'img/gallery/dtf-008.jpg' %}" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-wrap filter-web" style="position: absolute; left: 760px; top: 772px;">
+          <div class="portfolio-item">
+             <a href="{% static 'img/gallery/dtf-009.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img src="{% static 'img/gallery/dtf-009.jpg' %}" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+{% endblock content %}
