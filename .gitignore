@@ -137,4 +137,3 @@ GitHub.sublime-settings
 .history
 __pychache__
 .env.dev
-locale/
