@@ -1,0 +1,95 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+  {% include 'main/blocks/breadcrumbs.html' %}
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h1>{% trans 'Пожертвування' %}</h1>
+        <ol>
+          <li><a href="index.html">{% trans 'Головна' %}</a></li>
+          <li>{% trans 'Пожертвування' %}</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  <section class="why-us section-bg aos-init aos-animate" data-aos="fade-up" date-aos-delay="200">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6 video-box">
+          <img src="{% static 'img/help-ukraine.png' %}" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+         <h3>{% trans 'Громадська організація «ДТІМ ФАУНДЕЙШН»' %}</h3>
+          <p>{% trans 'ЄДРПОУ' %} 44170922</p>
+          <h6>{% trans 'Рахунок отримувача у форматі стандарту IBAN:' %}</h6>
+          <p>UA183348510000000026007154801</p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about aos-init aos-animate" data-aos="fade-up">
+    <div class="container">
+
+      <div class="row">
+       <h2>{% trans 'Для перерахунків з закордону через SWIFT' %}</h2>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <h3>{% trans 'Для Американський долар/USD:' %}</h3>
+          <ul>
+            <li><i class="bi bi-check2-square"></i> {% trans 'Отримувач: "DTIM FOUNDATION"' %} </li>
+            <li><i class="bi bi-check2-square"></i> IBAN: UA183348510000000026007154801</li>
+            <li><i class="bi bi-check2-square"></i> Банк: FIRST UKRAINIAN INTERNATIONAL BANK</li>
+            <li><i class="bi bi-check2-square"></i> Адреса: 4, Andriivska Str., Kyiv, 04070, Ukraine</li>
+            <li><i class="bi bi-check2-square"></i> SWIFT BIC: FUIBUA2X</li>
+          </ul>
+          <h6>{% trans 'Банки кореспонденти:' %}</h6>
+          <ul>
+            <li><i class="bi bi-check2-square"></i> Банк:JPMorgan Chase Bank N.A</li>
+            <li><i class="bi bi-check2-square"></i> SWIFT BIC: CHASUS33</li>
+          </ul>
+          <h6>{% trans 'або' %}</h6>
+          <ul>
+            <li><i class="bi bi-check2-square"></i> Банк: The Bank of New York Mellon</li>
+            <li><i class="bi bi-check2-square"></i> SWIFT BIC: IRVTUS3N</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <h3>{% trans 'Для Євро/EUR' %}</h3>
+          <ul>
+            <li><i class="bi bi-check2-square"></i> {% trans 'Отримувач: "DTIM FOUNDATION"' %} </li>
+            <li><i class="bi bi-check2-square"></i> IBAN: UA183348510000000026007154801</li>
+            <li><i class="bi bi-check2-square"></i> Банк: FIRST UKRAINIAN INTERNATIONAL BANK</li>
+            <li><i class="bi bi-check2-square"></i> Адреса: 4, Andriivska Str., Kyiv, 04070, Ukraine</li>
+            <li><i class="bi bi-check2-square"></i> SWIFT BIC: FUIBUA2X</li>
+          </ul>
+          <h6>{% trans 'Банки кореспонденти:' %}</h6>
+          <ul>
+            <li><i class="bi bi-check2-square"></i> Банк:Commerzbank AG</li>
+            <li><i class="bi bi-check2-square"></i> SWIFT BIC: COBADEFF</li>
+          </ul>
+          <h6>{% trans 'або' %}</h6>
+          <ul>
+            <li><i class="bi bi-check2-square"></i> Банк: Raiffeisen Bank International AG</li>
+            <li><i class="bi bi-check2-square"></i> SWIFT BIC: RZBAATWW</li>
+          </ul>
+          <h6>{% trans 'або' %}</h6>
+          <ul>
+            <li><i class="bi bi-check2-square"></i> Банк: Landesbank Baden-Wurttemberg</li>
+            <li><i class="bi bi-check2-square"></i> SWIFT BIC: SOLADEST</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+{% endblock content %}

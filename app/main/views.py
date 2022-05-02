@@ -37,3 +37,7 @@ def page_detail(request, pk):
     except:
         return HttpResponseNotFound("Not found")   
     return render(request, 'main/detail.html', {'page': page, 'current': 'page'})
+
+
+def donate(request):
+    return render(request, "main/donate.html", context={'page': 'donate'})
