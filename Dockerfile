@@ -15,7 +15,6 @@ COPY ./app /app
 COPY ./scripts /scripts
 WORKDIR /app
 
-
 RUN python -m venv /py && \
     /py/bin/pip install --upgrade pip && \
     # apk add --update --no-cache --virtual .tmp-build-deps \
@@ -29,7 +28,7 @@ RUN python -m venv /py && \
     chmod -R 755 /vol && \
     chmod -R +x /scripts 
 
-
+RUN apk add gettext
 ENV PATH="/scripts:/py/bin:$PATH"
 EXPOSE 8000
 CMD ["run.sh"]

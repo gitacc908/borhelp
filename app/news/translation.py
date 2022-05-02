@@ -3,6 +3,6 @@ from .models import News
 
 
 class NewsTranslationOptions(TranslationOptions):
-    fields = ('title', 'description', 'image')
+    fields = ('title', 'page_title', 'description', 'image')
 
 translator.register(News, NewsTranslationOptions)

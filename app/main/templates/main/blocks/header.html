@@ -24,7 +24,7 @@
         {% endfor %}
       </form>
       <ul>
-        <li><a {% if page == 'main' %}class="active"{% endif %} href="{% url 'main:main' %}">Про нас</a></li>
+        <li><a {% if page == 'main' %}class="active"{% endif %} href="{% url 'main:main' %}">{% trans 'Про нас' %}</a></li>
         {% for page in pages %}
         <li><a {% if current == 'page' %}class="active"{% endif %} href="{% url 'main:detail' page.pk %}">{{ page.title|safe }}</br></a></li>
         {% endfor %}
@@ -33,9 +33,9 @@
         <li><a {% if page == 'humanitarian' %}class="active"{% endif %} href="{% url 'main:humanitarian' %}">Гуманітарна</br>допомога</a></li>
         <li><a {% if page == 'medical' %}class="active"{% endif %} href="{% url 'main:medical' %}">Ліки, памперси</br>дитяче харчування</a></li>
         <li><a {% if page == 'contacts' %}class="active"{% endif %} href="{% url 'main:contacts' %}">Зворотній</br>зв'язок</a></li> -->
-        <li><a {% if page == 'gallery' %}class="active"{% endif %}  href="{% url 'main:gallery' %}">Галерея</a></li>
-        <li><a {% if page == 'blogs' %}class="active"{% endif %}  href="{% url 'news:news' %}">Новини</a></li>
-        <li><a {% if page == 'contacts' %}class="active"{% endif %}  href="{% url 'main:contacts' %}">Контакти</a></li>
+        <li><a {% if page == 'gallery' %}class="active"{% endif %}  href="{% url 'main:gallery' %}">{% trans 'Галерея' %}</a></li>
+        <li><a {% if page == 'blogs' %}class="active"{% endif %}  href="{% url 'news:news' %}">{% trans 'Новини' %}</a></li>
+        <li><a {% if page == 'contacts' %}class="active"{% endif %}  href="{% url 'main:contacts' %}">{% trans 'Контакти' %}</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
       </ul>

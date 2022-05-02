@@ -18,6 +18,10 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
 from django.conf import settings
+from django.conf.urls import url
+from django.contrib.auth.decorators import login_required
+from django.views.decorators.cache import never_cache
+from ckeditor_uploader import views
 
 
 urlpatterns = [
@@ -27,6 +31,9 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path('', include('main.urls')),
     path('news/', include('news.urls')),
+    path('rosetta/', include('rosetta.urls')),
+    url('upload/', login_required(views.upload), name='ckeditor_upload'),
+    url('browse/', never_cache(login_required(views.browse)), name='ckeditor_browse'),
     path('ckeditor/', include('ckeditor_uploader.urls')),
 )
 
