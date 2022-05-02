@@ -1,8 +1,8 @@
 from modeltranslation.translator import translator, TranslationOptions
-from .models import News
+from .models import Blog
 
 
 class NewsTranslationOptions(TranslationOptions):
     fields = ('title', 'page_title', 'description', 'image')
 
-translator.register(News, NewsTranslationOptions)
+translator.register(Blog, NewsTranslationOptions)

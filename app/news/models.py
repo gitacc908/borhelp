@@ -4,12 +4,12 @@ from django.utils.text import slugify
 from ckeditor_uploader.fields import RichTextUploadingField
 
 
-class News(models.Model):
+class Blog(models.Model):
     title = RichTextField(max_length=255, verbose_name='Заголовок')
     description_meta = models.CharField(max_length=255, verbose_name='Описание мета', null=True, blank=True)
     keywords_meta = models.CharField(max_length=255, verbose_name='Keywords мета', null=True, blank=True)
     page_title = models.CharField(max_length=255, verbose_name='Заголовок страницы')
-    # slug = models.SlugField(unique=True, blank=True)
+    slug = models.SlugField(blank=True, unique=True)
     description = RichTextUploadingField(verbose_name='Тело поста')
     created = models.DateField(verbose_name='Создан')
     image = models.ImageField(upload_to='news/', verbose_name='Превью')
@@ -21,7 +21,7 @@ class News(models.Model):
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.title)
-        super(News, self).save(*args, **kwargs)
+        super(Blog, self).save(*args, **kwargs)
     
     class Meta:
         verbose_name = 'News'
