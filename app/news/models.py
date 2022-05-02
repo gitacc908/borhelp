@@ -9,7 +9,7 @@ class News(models.Model):
     description_meta = models.CharField(max_length=255, verbose_name='Описание мета', null=True, blank=True)
     keywords_meta = models.CharField(max_length=255, verbose_name='Keywords мета', null=True, blank=True)
     page_title = models.CharField(max_length=255, verbose_name='Заголовок страницы')
-    slug = models.SlugField(unique=True, blank=True)
+    # slug = models.SlugField(unique=True, blank=True)
     description = RichTextUploadingField(verbose_name='Тело поста')
     created = models.DateField(verbose_name='Создан')
     image = models.ImageField(upload_to='news/', verbose_name='Превью')
