@@ -26,15 +26,15 @@ from ckeditor_uploader import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('rosetta/', include('rosetta.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
 
 urlpatterns += i18n_patterns(
     path('', include('main.urls')),
     path('news/', include('news.urls')),
-    path('rosetta/', include('rosetta.urls')),
-    url('upload/', login_required(views.upload), name='ckeditor_upload'),
-    url('browse/', never_cache(login_required(views.browse)), name='ckeditor_browse'),
-    path('ckeditor/', include('ckeditor_uploader.urls')),
+    # url('upload/', login_required(views.upload), name='ckeditor_upload'),
+    # url('browse/', never_cache(login_required(views.browse)), name='ckeditor_browse'),
 )
 
 if settings.DEBUG:

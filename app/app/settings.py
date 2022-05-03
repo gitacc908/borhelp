@@ -140,13 +140,17 @@ LOCALE_PATHS = (
 
 CKEDITOR_CONFIGS = {
     'default': {
-        'toolbar': 'full'
+        'toolbar': 'upload',
         # 'extraPlugins': ','.join(
         #     [
         #        'html5audio',
         #     ]
         # ),
     },
+       'awesome_ckeditor': {
+        'toolbar': 'Basic',
+    },
+
 }
 
 CKEDITOR_UPLOAD_PATH = "uploads/"

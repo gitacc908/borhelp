@@ -17,13 +17,19 @@
     {% get_language_info_list for LANGUAGES as languages %}
 
     <nav id="navbar" class="navbar">
-      <form class="boxed" >
+      <form class="boxed boxed-desktop" >
         {% for language in languages %}
         <input onchange="location = this.value;" type="radio" id="{{language.code}}" name="lang-switcher" value="{% format_current_url_with_lang_code request language.code LANGUAGE_CODE %}" {% if language.code == LANGUAGE_CODE %} checked {% endif %}>
         <label for="{{language.code}}">{{language.code}}</label>
         {% endfor %}
       </form>
       <ul>
+        <form class="boxed boxed-mobile" style="display: none;" >
+          {% for language in languages %}
+          <input onchange="location = this.value;" type="radio" id="{{language.code}}" name="lang-switcher" value="{% format_current_url_with_lang_code request language.code LANGUAGE_CODE %}" {% if language.code == LANGUAGE_CODE %} checked {% endif %}>
+          <label for="{{language.code}}">{{language.code}}</label>
+          {% endfor %}
+        </form>
         <li><a {% if page == 'main' %}class="active"{% endif %} href="{% url 'main:main' %}">{% trans 'Про нас' %}</a></li>
         {% for page in pages %}
         <li><a {% if current == 'page' %}class="active"{% endif %} href="{% url 'main:detail' page.pk %}">{{ page.title|safe }}</br></a></li>
@@ -40,7 +46,6 @@
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
       </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
 
   </div>

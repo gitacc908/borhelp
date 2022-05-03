@@ -1,0 +1,333 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-03 19:04+0000\n"
+"PO-Revision-Date: 2022-05-03 19:02+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: app/settings.py:122
+msgid "Ukrainian"
+msgstr "Ukrainian"
+
+#: app/settings.py:123
+msgid "English"
+msgstr "English"
+
+#: main/templates/main/base.html:10
+msgid "Громадська організація Дтім Фаундейшн"
+msgstr ":DTeam Foundation, a non-governmental organization"
+
+#: main/templates/main/blocks/breadcrumbs.html:8
+#: main/templates/main/blocks/breadcrumbs.html:11
+msgid "Центр \"Перемога\" "
+msgstr "Victory Center"
+
+#: main/templates/main/blocks/breadcrumbs.html:10
+#: main/templates/main/blocks/breadcrumbs.html:16
+#: main/templates/main/blocks/breadcrumbs.html:22
+#: main/templates/main/blocks/breadcrumbs.html:28
+#: main/templates/main/blocks/breadcrumbs.html:34
+#: main/templates/main/donate.html:13 main/templates/main/gallery.html:13
+#: news/templates/news/blog-detail.html:20
+#: news/templates/news/blog-list.html:15
+msgid "Головна"
+msgstr "Home"
+
+#: main/templates/main/blocks/breadcrumbs.html:14
+#: main/templates/main/blocks/breadcrumbs.html:17
+#, fuzzy
+#| msgid "Допомагаємо з переїздом"
+msgid "Допомога з переїздом"
+msgstr "We help with moving"
+
+#: main/templates/main/blocks/breadcrumbs.html:20
+#: main/templates/main/blocks/breadcrumbs.html:23
+msgid "Ліки, дитяче харчування"
+msgstr "Medicines, baby food"
+
+#: main/templates/main/blocks/breadcrumbs.html:26
+#: main/templates/main/blocks/breadcrumbs.html:29
+#: main/templates/main/main.html:92
+msgid "Гуманітарна допомога"
+msgstr "Humanitarian help"
+
+#: main/templates/main/blocks/breadcrumbs.html:32
+#: main/templates/main/blocks/breadcrumbs.html:35
+msgid "Зворотній зв'язок"
+msgstr "Feedback"
+
+#: main/templates/main/blocks/footer.html:8
+msgid "© 2022 ГО \"ДТІМ ФАУНДЕЙШН\". Розроблено в"
+msgstr "© 2022 NGO \":DTEAM FOUNDATION\". Developed by"
+
+#: main/templates/main/blocks/header.html:33
+msgid "Про нас"
+msgstr "About us"
+
+#: main/templates/main/blocks/header.html:42
+#: main/templates/main/gallery.html:11 main/templates/main/gallery.html:14
+msgid "Галерея"
+msgstr "Gallery"
+
+#: main/templates/main/blocks/header.html:43
+#: news/templates/news/blog-detail.html:17
+#: news/templates/news/blog-detail.html:21
+#: news/templates/news/blog-list.html:12 news/templates/news/blog-list.html:16
+msgid "Новини"
+msgstr "News"
+
+#: main/templates/main/blocks/header.html:44
+msgid "Контакти"
+msgstr "Contact"
+
+#: main/templates/main/blocks/header.html:45 main/templates/main/donate.html:11
+#: main/templates/main/donate.html:14 main/templates/main/main.html:14
+msgid "Пожертвування"
+msgstr "Donation"
+
+#: main/templates/main/contacts.html:13
+msgid ""
+"Якщо у вас є запитання чи пропозиції, звертайтеся за наступними контактами:"
+msgstr ""
+"If you have any questions or suggestions, please contact the following "
+"contacts:"
+
+#: main/templates/main/contacts.html:17
+msgid "Михайло Андрєєв"
+msgstr "Mihail Andreev"
+
+#: main/templates/main/contacts.html:18
+msgid "директор ГО"
+msgstr "director of the CSO"
+
+#: main/templates/main/contacts.html:24
+msgid "Олександр Кудря"
+msgstr "Oleksey Kudrya"
+
+#: main/templates/main/contacts.html:25
+msgid "помічник"
+msgstr "assistant"
+
+#: main/templates/main/donate.html:30
+#, fuzzy
+#| msgid "Громадська організація Дтім Фаундейшн"
+msgid "Громадська організація «ДТІМ ФАУНДЕЙШН»"
+msgstr ":DTeam Foundation, a non-governmental organization"
+
+#: main/templates/main/donate.html:31
+msgid "ЄДРПОУ"
+msgstr "USREOU"
+
+#: main/templates/main/donate.html:32
+msgid "Рахунок отримувача у форматі стандарту IBAN:"
+msgstr "Recipient's account in IBAN format:"
+
+#: main/templates/main/donate.html:45
+msgid "Для перерахунків з закордону через SWIFT"
+msgstr "For recalculations from abroad via SWIFT"
+
+#: main/templates/main/donate.html:47
+msgid "Для Американський долар/USD:"
+msgstr "For US Dollar / USD:"
+
+#: main/templates/main/donate.html:49 main/templates/main/donate.html:69
+msgid "Отримувач: \"DTIM FOUNDATION\""
+msgstr "Recipient: \":DTEAM FOUNDATION\""
+
+#: main/templates/main/donate.html:55 main/templates/main/donate.html:75
+msgid "Банки кореспонденти:"
+msgstr "Correspondent banks:"
+
+#: main/templates/main/donate.html:60 main/templates/main/donate.html:80
+#: main/templates/main/donate.html:85
+msgid "або"
+msgstr "or"
+
+#: main/templates/main/donate.html:67
+msgid "Для Євро/EUR"
+msgstr "For Euro / EUR"
+
+#: main/templates/main/humanitarian.html:15
+msgid "В Борисполі діє пункт гуманітарної допомоги"
+msgstr "There is a humanitarian aid point in Boryspil"
+
+#: main/templates/main/humanitarian.html:17
+msgid ""
+"\n"
+"            Орієнтовний перелік найнеобхіднішого на найближчий час: "
+"консервовані продукти, сублімовані продукти, хліб,\n"
+"            крупи, питна вода, непродовольчі товари, предмети гігієни та "
+"інше.\n"
+"            "
+msgstr ""
+"\n"
+"Approximate list of essentials for the near future: canned foods, freeze-"
+"dried foods, bread,\n"
+"cereals, drinking water, non-food items, hygiene items and more."
+
+#: main/templates/main/humanitarian.html:23
+msgid "Щоб отримати допомогу необхідно:"
+msgstr "To get help you need:"
+
+#: main/templates/main/humanitarian.html:26
+msgid ""
+" Звернутись до свого відповідального за будинок або до депутата\n"
+"              міської ради міста Бориспіль "
+msgstr ""
+"Contact your house manager or MP\n"
+"Boryspil City Council"
+
+#: main/templates/main/humanitarian.html:29
+msgid ""
+" Сформувати список необхідних речей і передати відповідальному чи\n"
+"              депутату"
+msgstr ""
+"Make a list of necessary things and pass it on to the person in charge\n"
+"deputy"
+
+#: main/templates/main/humanitarian.html:32
+msgid ""
+"  Допомогу можна забрати з гуманітарного пункту, якщо буде відсутня\n"
+"              доставка до місця проживання"
+msgstr ""
+"Assistance can be withdrawn from the humanitarian center if it is missing\n"
+"delivery to the place of residence"
+
+#: main/templates/main/humanitarian.html:36
+msgid ""
+"\n"
+"            Гуманітарна допомога формується не в індивідуальному порядку, а "
+"на групу осіб та перадається відповідальній\n"
+"            людині."
+msgstr ""
+"\n"
+"Humanitarian aid is not formed individually, but in a group of people and is "
+"transferred to the person in charge\n"
+"man."
+
+#: main/templates/main/humanitarian.html:40
+msgid ""
+"\n"
+"            Місто просить із розумінням поставитися до того, що забезпечити "
+"у достатній кількості всіх і одразу сьогодні\n"
+"            неможливо, тож будьмо стриманими та співчутливими до "
+"найнужденніших.\n"
+"            "
+msgstr ""
+"\n"
+"The city asks to be understanding of what to provide in sufficient numbers "
+"for everyone today\n"
+"it is impossible, so let us be restrained and compassionate towards the most "
+"needy."
+
+#: main/templates/main/humanitarian.html:45
+msgid ""
+"\n"
+"            Якщо ви маєте можливість передати гуманітарний вантаж та "
+"матеріально підтримати, звертайтесь в\n"
+"            Бориспільський волонтерський центр \"Перемога\"\n"
+"            "
+msgstr ""
+"\n"
+"If you have the opportunity to transfer humanitarian aid and financial "
+"support, contact\n"
+"Boryspil Volunteer Center \"Victory\""
+
+#: main/templates/main/humanitarian.html:50
+msgid "Хочу допомогти"
+msgstr "I want to help"
+
+#: main/templates/main/main.html:11
+msgid "Громадська організація"
+msgstr "Public organization"
+
+#: main/templates/main/main.html:11
+msgid "«ДТІМ ФАУНДЕЙШН»"
+msgstr "«:DTEAM FOUNDATION»"
+
+#: main/templates/main/main.html:13
+msgid ""
+"Метою організації є матеріальна допомога Збройним силам України, іншим "
+"військовим формуванням, правоохоронним (спеціальним) органам, органам "
+"цивільного захисту, добровольчим формуванням територіальних громад, іншим "
+"особам, які забезпечують національну безпеку і оборону, відсіч і стримування "
+"збройної агресії іноземної держави, а також особам, які постраждали чи "
+"можуть постраждати від такої збройної агресії. Усі  наші ресурси направлені "
+"на допомогу! Просимо усіх доєднуватися! "
+msgstr ""
+"The purpose of the organization is material assistance to the Armed Forces "
+"of Ukraine, other military formations, law enforcement (special) bodies, "
+"civil protection bodies, voluntary formations of territorial communities, "
+"other persons providing national security and defense, repelling and "
+"deterring armed aggression of a foreign state. who have suffered or may "
+"suffer from such armed aggression. All our resources are aimed at helping! "
+"We ask everyone to join!"
+
+#: main/templates/main/main.html:81
+msgid "Допомагаємо з переїздом"
+msgstr "We help with moving"
+
+#: main/templates/main/main.html:83
+msgid ""
+"Шукаєте можливість виїхати? Потрібна допомога із пошуком автобуса чи машини? "
+"Звертайтесь до нашої організації, волонтери допоможуть вам якнайскоріше\n"
+"            "
+msgstr ""
+"Looking for an opportunity to leave? Need help finding a bus or car? Contact "
+"our organization, volunteers will help you as soon as possible"
+
+#: main/templates/main/main.html:93
+msgid ""
+"Збір коштів для людей які опинилися в скрутній ситуації та змушені зараз "
+"жити в умовах воєнного часу та дійсно потребують необхідної допомоги. "
+"Надання гуманітарної допомоги"
+msgstr ""
+"Fundraising for people who find themselves in a difficult situation and are "
+"now forced to live in wartime and really need the help they need. Providing "
+"humanitarian assistance"
+
+#: main/templates/main/main.html:100
+msgid "Допомога ЗСУ"
+msgstr "Assistance to the Armed Forces"
+
+#: main/templates/main/main.html:101
+msgid ""
+"Збір коштів на забезпечення для наших захисників. Шукаємо постачальників, "
+"сплачуємо та доставляємо бронежилети, тепловізори, медикаменти, тактичний "
+"одяг"
+msgstr ""
+"Fundraising for our defenders. We are looking for suppliers, pay and deliver "
+"bulletproof vests, thermal imagers, medicines, tactical clothing"
+
+#: main/templates/main/main.html:144
+msgid ""
+"Кожного дня ми докладаємо багато зусиль, щоб доставити гуманітарну допомогу "
+"для наших людей, які опинились у скрутній ситуації"
+msgstr ""
+"Every day we work hard to deliver humanitarian aid to our people in need."
+
+#: main/templates/main/main.html:149
+msgid ""
+"Кожна людина наразі має спраямувати свої зусилля та ресурси задля "
+"недопущення гуманітарної кризи та допомогти наши захисникам"
+msgstr ""
+"Everyone must now work out their efforts and resources to prevent a "
+"humanitarian crisis and help our defenders"
+
+#: news/templates/news/blog-list.html:47
+msgid "переглядів"
+msgstr "views"
