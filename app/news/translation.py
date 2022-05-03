@@ -3,6 +3,6 @@ from .models import Blog
 
 
 class NewsTranslationOptions(TranslationOptions):
-    fields = ('title', 'page_title', 'description', 'image')
+    fields = ('title', 'page_title', 'description', 'description_meta', 'keywords_meta', 'image')
 
 translator.register(Blog, NewsTranslationOptions)
