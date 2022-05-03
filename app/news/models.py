@@ -5,7 +5,7 @@ from ckeditor_uploader.fields import RichTextUploadingField
 
 
 class Blog(models.Model):
-    title = RichTextField(max_length=255, verbose_name='Заголовок')
+    title = models.CharField(max_length=255, verbose_name='Заголовок')
     description_meta = models.CharField(max_length=255, verbose_name='Описание мета', null=True, blank=True)
     keywords_meta = models.CharField(max_length=255, verbose_name='Keywords мета', null=True, blank=True)
     page_title = models.CharField(max_length=255, verbose_name='Заголовок страницы')
