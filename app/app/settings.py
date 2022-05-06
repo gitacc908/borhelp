@@ -138,17 +138,38 @@ LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
 )
 
+# CKEDITOR_CONFIGS = {
+#     'default': {
+#         'toolbar': 'upload',
+#         # 'extraPlugins': ','.join(
+#         #     [
+#         #        'html5audio',
+#         #     ]
+#         # ),
+#     },
+#        'awesome_ckeditor': {
+#         'toolbar': 'Basic',
+#     },
+
+# }
 CKEDITOR_CONFIGS = {
     'default': {
-        'toolbar': 'upload',
-        # 'extraPlugins': ','.join(
-        #     [
-        #        'html5audio',
-        #     ]
-        # ),
-    },
-       'awesome_ckeditor': {
-        'toolbar': 'Basic',
+        'toolbar': [['Source', '-', 'Save', 'NewPage', 'Preview', '-'],
+                    ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'],
+                    ['Find', 'Replace', '-', 'SelectAll', '-'],
+                    ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'CopyFormatting',
+                     'RemoveFormat'],
+                    ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-',
+                     'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-'],
+                    ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe'],
+                    ['Link', 'Unlink', 'Anchor'],
+                    ['Styles', 'Format', 'Font', 'FontSize'], ['TextColor', 'BGColor'], ['Maximize', 'ShowBlocks'],
+                    ],
+        'height': 600,
+        'width': 1000
+        # 'toolbar': None,
+        # 'enterMode': 2,
+        # 'shiftEnterMode': 3
     },
 
 }
