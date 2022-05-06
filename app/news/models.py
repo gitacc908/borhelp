@@ -10,7 +10,7 @@ class Blog(models.Model):
     keywords_meta = models.CharField(max_length=255, verbose_name='Keywords мета', null=True, blank=True)
     page_title = models.CharField(max_length=255, verbose_name='Заголовок страницы')
     slug = models.SlugField(blank=True, unique=True)
-    description = RichTextField(max_length=255, verbose_name='Описание')
+    description = RichTextUploadingField(max_length=255, verbose_name='Описание')
     created = models.DateField(verbose_name='Создан')
     image = models.ImageField(upload_to='news/', verbose_name='Превью')
     image2 = models.ImageField(upload_to='news/', verbose_name='Изображение', blank=True, null=True)
