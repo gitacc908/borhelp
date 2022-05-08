@@ -2108,3 +2108,9 @@ section {
 .entry-content img{
   width: 100% !important;
 }
+
+@media(max-width:1400px){
+  #hero{
+    height: 92vh;
+  }
+}
