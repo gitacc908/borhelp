@@ -2048,7 +2048,6 @@ section {
   font-weight: 700;
   transition: all 0.3s;
   color: white;
-  text-transform: uppercase;
 }
 
 .boxed input[type="radio"] {
@@ -2079,4 +2078,33 @@ section {
   .boxed-desktop{
     display: none;
   }
+}
+
+
+/*  */
+.boxed input[type=radio]:checked+label {
+  color: #f7d50b;
+}
+
+.boxed label {
+  display: inline-block;
+  width: 100%;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: 100;
+  transition: all .3s;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+.boxed label {
+  font-size: 16px;
+  font-weight: 100;
+  transition: all .3s;
+  color: unset;
+  width: 40px;
+}
+}
+.entry-content img{
+  width: 100% !important;
 }
