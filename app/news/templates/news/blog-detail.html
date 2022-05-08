@@ -68,7 +68,7 @@
                   {% if blog.image %}
                 <img src="{{ blog.image.url }}" alt="">
                 {% endif %}
-                <h4><a href="{% url 'news:blog-detail' blog.pk %}">{{ blog.title|safe }}</a></h4>
+                <h4><a href="{% url 'news:blog-detail' blog.slug %}">{{ blog.title|safe }}</a></h4>
                 <time datetime="2020-01-01">{{ blog.created }}</time>
               </div>
                 {% endfor %}
