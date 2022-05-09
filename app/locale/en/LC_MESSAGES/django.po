@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-08 11:30+0000\n"
-"PO-Revision-Date: 2022-05-08 11:31+0000\n"
+"PO-Revision-Date: 2022-05-09 09:02+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -72,7 +72,7 @@ msgstr "Feedback"
 
 #: main/templates/main/blocks/footer.html:8
 msgid "© 2022 ГО \"ДТІМ ФАУНДЕЙШН\". Розроблено в"
-msgstr "© 2022 NGO \"DTEAM FOUNDATION\". Developed by"
+msgstr "© 2022 \"DTEAM FOUNDATION\". Developed by"
 
 #: main/templates/main/blocks/header.html:38
 msgid "Про нас"
