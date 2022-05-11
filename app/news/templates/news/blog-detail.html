@@ -63,7 +63,7 @@
           <div class="sidebar">
 
             <div class="sidebar-item recent-posts">
-                {% for blog in blogs %}
+                {% for blog in blogs|slice:":6" %}
               <div class="post-item clearfix">
                   {% if blog.image %}
                 <img src="{{ blog.image.url }}" alt="">

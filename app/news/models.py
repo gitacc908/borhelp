@@ -25,5 +25,6 @@ class Blog(models.Model):
         super(Blog, self).save(*args, **kwargs)
     
     class Meta:
+        ordering = ['-id']
         verbose_name = 'News'
         verbose_name_plural = 'News'
