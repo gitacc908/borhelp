@@ -29,7 +29,7 @@
         {% endfor %}
       </form> -->
       <ul>
-        <form class="boxed boxed-mobile"  style="cursor: pointer;" style="display: none;" >
+        <form class="boxed boxed-mobile"  style="display: none;" >
           {% for language in languages %}
           <input onchange="location = this.value;" type="radio" id="{{language.code}}" name="lang-switcher" value="{% format_current_url_with_lang_code request language.code LANGUAGE_CODE %}" {% if language.code == LANGUAGE_CODE %} checked {% endif %}>
           <label for="{{language.code}}">{% if language.code == 'uk' %} Укр {% else %} Eng {% endif %}</label>
