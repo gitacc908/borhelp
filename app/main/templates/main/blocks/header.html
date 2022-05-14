@@ -15,10 +15,10 @@
     {% get_current_language as LANGUAGE_CODE %}
     {% get_available_languages as LANGUAGES %}
     {% get_language_info_list for LANGUAGES as languages %}
-    <form class="boxed boxed-desktop" style="cursor: pointer;" >
+    <form class="boxed boxed-desktop">
       {% for language in languages %}
       <input onchange="location = this.value;" type="radio" id="{{language.code}}" name="lang-switcher" value="{% format_current_url_with_lang_code request language.code LANGUAGE_CODE %}" {% if language.code == LANGUAGE_CODE %} checked {% endif %}>
-      <label for="{{language.code}}">{% if language.code == 'uk' %} Укр {% else %} Eng {% endif %}</label>
+      <label style="cursor: pointer;"  for="{{language.code}}">{% if language.code == 'uk' %} Укр {% else %} Eng {% endif %}</label>
       {% endfor %}
     </form>
     <nav id="navbar" class="navbar">
