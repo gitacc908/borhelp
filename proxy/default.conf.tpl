@@ -4,9 +4,6 @@ server {
     ssl_certificate /etc/nginx/ssl/nginx.crt;
     ssl_certificate_key /etc/nginx/ssl/nginx.key;
 
-    location /test/ {
-        root /var/www;
-    }
 
     location /static {
         alias /vol/static;
