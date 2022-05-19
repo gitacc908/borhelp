@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-08 11:30+0000\n"
-"PO-Revision-Date: 2022-05-09 09:02+0000\n"
+"POT-Creation-Date: 2022-05-19 13:42+0000\n"
+"PO-Revision-Date: 2022-05-19 13:44+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -112,12 +112,13 @@ msgid "Михайло Андрєєв"
 msgstr "Mihail Andreev"
 
 #: main/templates/main/contacts.html:18
-msgid "директор ГО"
-msgstr "director of the CSO"
+#| msgid "Головна"
+msgid "голова"
+msgstr "head"
 
 #: main/templates/main/contacts.html:24
 msgid "Олександр Кудря"
-msgstr "Oleksey Kudrya"
+msgstr "Oleksandr Kudrya"
 
 #: main/templates/main/contacts.html:25
 msgid "помічник"
@@ -329,3 +330,6 @@ msgstr ""
 #: news/templates/news/blog-list.html:47
 msgid "переглядів"
 msgstr "views"
+
+#~ msgid "директор ГО"
+#~ msgstr "director of the CSO"

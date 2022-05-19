@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-08 11:30+0000\n"
+"POT-Creation-Date: 2022-05-19 13:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,7 @@ msgid "Михайло Андрєєв"
 msgstr ""
 
 #: main/templates/main/contacts.html:18
-msgid "директор ГО"
+msgid "голова"
 msgstr ""
 
 #: main/templates/main/contacts.html:24
