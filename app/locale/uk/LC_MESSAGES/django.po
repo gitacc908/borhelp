@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-19 13:42+0000\n"
+"POT-Creation-Date: 2022-06-02 16:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,7 +104,7 @@ msgid ""
 "Якщо у вас є запитання чи пропозиції, звертайтеся за наступними контактами:"
 msgstr ""
 
-#: main/templates/main/contacts.html:17
+#: main/templates/main/contacts.html:17 main/templates/main/donate.html:200
 msgid "Михайло Андрєєв"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Громадська організація «ДТІМ ФАУНДЕЙШН»"
 msgstr ""
 
-#: main/templates/main/donate.html:31
+#: main/templates/main/donate.html:31 main/templates/main/donate.html:247
 msgid "ЄДРПОУ"
 msgstr ""
 
@@ -132,39 +132,93 @@ msgstr ""
 msgid "Рахунок отримувача у форматі стандарту IBAN:"
 msgstr ""
 
-#: main/templates/main/donate.html:45
+#: main/templates/main/donate.html:51
+msgid "Пожертвування для врятування життя"
+msgstr ""
+
+#: main/templates/main/donate.html:63
+msgid " Переказ з картки"
+msgstr ""
+
+#: main/templates/main/donate.html:82
+msgid "Крипто переказ"
+msgstr ""
+
+#: main/templates/main/donate.html:91
+msgid "Банківський переказ"
+msgstr ""
+
+#: main/templates/main/donate.html:105
+msgid "Пожертвування в криптовалюті"
+msgstr ""
+
+#: main/templates/main/donate.html:110 main/templates/main/donate.html:129
+#: main/templates/main/donate.html:148 main/templates/main/donate.html:167
+#: main/templates/main/donate.html:195 main/templates/main/donate.html:211
+#: main/templates/main/donate.html:228 main/templates/main/donate.html:244
+#: main/templates/main/donate.html:261 main/templates/main/donate.html:282
+#: main/templates/main/donate.html:299 main/templates/main/donate.html:315
+#: main/templates/main/donate.html:334 main/templates/main/donate.html:351
+msgid "скопійовано"
+msgstr ""
+
+#: main/templates/main/donate.html:189
+msgid "Пожертвування банківським переказом"
+msgstr ""
+
+#: main/templates/main/donate.html:192
+msgid "Пожертвування в UAH"
+msgstr ""
+
+#: main/templates/main/donate.html:198
+msgid "Переказ Monobank"
+msgstr ""
+
+#: main/templates/main/donate.html:231
+msgid "Отримувач"
+msgstr ""
+
+#: main/templates/main/donate.html:233
+msgid "ГРОМАДСЬКА ОРГАНІЗАЦІЯ “ДТІМ ФАУНДЕЙШН“"
+msgstr ""
+
+#: main/templates/main/donate.html:264
+msgid "Банк"
+msgstr ""
+
+#: main/templates/main/donate.html:377
 msgid "Для перерахунків з закордону через SWIFT"
 msgstr ""
 
-#: main/templates/main/donate.html:47
+#: main/templates/main/donate.html:379
 msgid "Для Американський долар/USD:"
 msgstr ""
 
-#: main/templates/main/donate.html:49 main/templates/main/donate.html:69
+#: main/templates/main/donate.html:381 main/templates/main/donate.html:401
 msgid "Отримувач: \"DTIM FOUNDATION\""
 msgstr ""
 
-#: main/templates/main/donate.html:51 main/templates/main/donate.html:57
-#: main/templates/main/donate.html:62 main/templates/main/donate.html:71
-#: main/templates/main/donate.html:77 main/templates/main/donate.html:82
-#: main/templates/main/donate.html:87
+#: main/templates/main/donate.html:383 main/templates/main/donate.html:389
+#: main/templates/main/donate.html:394 main/templates/main/donate.html:403
+#: main/templates/main/donate.html:409 main/templates/main/donate.html:414
+#: main/templates/main/donate.html:419
 msgid "Банк:"
 msgstr ""
 
-#: main/templates/main/donate.html:52 main/templates/main/donate.html:72
+#: main/templates/main/donate.html:384 main/templates/main/donate.html:404
 msgid "Адреса:"
 msgstr ""
 
-#: main/templates/main/donate.html:55 main/templates/main/donate.html:75
+#: main/templates/main/donate.html:387 main/templates/main/donate.html:407
 msgid "Банки кореспонденти:"
 msgstr ""
 
-#: main/templates/main/donate.html:60 main/templates/main/donate.html:80
-#: main/templates/main/donate.html:85
+#: main/templates/main/donate.html:392 main/templates/main/donate.html:412
+#: main/templates/main/donate.html:417
 msgid "або"
 msgstr ""
 
-#: main/templates/main/donate.html:67
+#: main/templates/main/donate.html:399
 msgid "Для Євро/EUR"
 msgstr ""
 

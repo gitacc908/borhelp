@@ -1,0 +1,292 @@
+.list-payments {
+  padding-left: 0;
+  margin-top: 30px;
+}
+.list-payments__next {
+  background-image: url(../img/donate/next.svg);
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+  background-position: right center;
+  transition: all 0.2s;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+.list-payments li {
+  list-style: none;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f7f7f7;
+  padding-bottom: 10px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .list-payments li:hover .list-payments__next {
+    margin-left: 40px;
+  }
+}
+.list-payments li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444444;
+  display: flex;
+  align-items: center;
+}
+.list-payments__icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-right: 10px;
+  background-color: #e1eeff;
+}
+.list-payments__icon img {
+  height: 30px;
+}
+
+.about h2 {
+  margin-bottom: 40px;
+  color: #2282ff;
+}
+.about h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.about h6 {
+  margin-bottom: 25px;
+}
+
+.crypto-bg {
+  background: #2282ff;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .crypto-bg {
+    padding: 40px;
+  }
+}
+
+.donation-bg {
+  background: #f3f8fa;
+  padding: 20px !important;
+}
+@media (max-width: 991px) {
+  .donation-bg:last-child {
+    padding-top: 0 !important;
+  }
+}
+@media (min-width: 768px) {
+  .donation-bg {
+    padding: 40px !important;
+  }
+}
+
+.donation-list {
+  margin-bottom: 24px;
+}
+.donation-list li {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+@media (hover: hover) and (pointer: fine) {
+  .donation-list li:hover svg path {
+    fill: #2282ff;
+  }
+}
+.donation-list__title {
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #2282ff;
+}
+.donation-list__description {
+  font-size: 16px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
+@media (min-width: 768px) {
+  .donation-list__description {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1400px) {
+  .donation-list__description {
+    font-size: 20px;
+  }
+}
+.donation-list__info {
+  width: calc(100% - 45px);
+}
+.donation-list__copy {
+  position: relative;
+  cursor: pointer;
+}
+.donation-list__copy p {
+  margin-bottom: 0;
+  padding-right: 30px;
+}
+.donation-list__copy svg {
+  height: 19px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.donation-list__copy svg path {
+  transition: all 0.2s;
+}
+
+.crypto-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.crypto-list .copied-info {
+  top: calc(100% + 15px);
+}
+.crypto-list li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 24px 0 24px;
+  transition: all 0.2s;
+}
+@media (min-width: 768px) {
+  .crypto-list li {
+    width: 50%;
+    padding: 24px 0 24px 16px;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .crypto-list li:hover svg path {
+    fill: #2282ff;
+  }
+}
+.crypto-list__token {
+  max-width: calc(100% - 45px);
+  width: auto;
+  position: relative;
+}
+.crypto-list__token h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+.crypto-list__token h5 img {
+  width: auto;
+  height: 25px;
+  margin-right: 10px;
+}
+.crypto-list__token h5 span {
+  color: #2282ff;
+  font-size: 18px;
+  margin-left: 5px;
+}
+@media (min-width: 768px) {
+  .crypto-list__token h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (min-width: 992px) {
+  .crypto-list__token h5 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+.crypto-list__token p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: initial;
+}
+@media (min-width: 992px) {
+  .crypto-list__token p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.crypto-list__copy {
+  width: 45px;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  cursor: pointer;
+  justify-content: center;
+}
+.crypto-list__copy svg {
+  width: 14px;
+}
+.crypto-list__copy svg path {
+  transition: all 0.2s;
+}
+
+.copied-info {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #f3f8fa;
+  border: 1px solid #2282ff;
+  padding: 0 10px;
+  z-index: 1;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: none;
+  margin-bottom: 0;
+  overflow: initial !important;
+}
+.copied-info.active {
+  opacity: 1;
+}
+.copied-info:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #2282ff;
+}
+.copied-info:before {
+  content: "";
+  position: absolute;
+  bottom: calc(100% - 1px);
+  left: 11px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid #f3f8fa;
+  z-index: 1;
+}
+
+.donation-btn {
+  padding: 15px 20px !important;
+  background: #2282ff;
+  border-radius: 12px;
+  margin-left: 20px;
+  color: #ffffff !important;
+  max-width: 160px;
+  margin-top: 10px;
+}
+@media (min-width: 992px) {
+  .donation-btn {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=yana.css.map */

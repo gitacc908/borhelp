@@ -17,7 +17,7 @@
 
     </div>
   </section>
-  <section class="why-us section-bg aos-init aos-animate" data-aos="fade-up" date-aos-delay="200">
+  <!-- <section class="why-us section-bg aos-init aos-animate" data-aos="fade-up" date-aos-delay="200">
     <div class="container">
 
       <div class="row">
@@ -36,9 +36,341 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
-  <section class="about aos-init aos-animate" data-aos="fade-up">
+  <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6 video-box">
+                <img src="{% static 'img/help-ukraine.png' %}" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+                <h3>{% trans 'Пожертвування для врятування життя' %}</h3>
+
+                <ul class="list-payments">
+                    <li>
+                        <a href="#" target="_blank">
+                          <span class="list-payments__icon">
+                               <img src="{% static 'img/donate/google-pay.svg' %}" alt="google" title="google">
+                          </span>
+                            <span class="list-payments__icon list-payments__icon_size-20">
+                               <img src="{% static 'img/donate/apple-pay.svg' %}" alt="apple" title="apple">
+                          </span>
+
+                           {% trans ' Переказ з картки' %}
+
+                            <span class="list-payments__next"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=AL9LP8ZQVLVRU" target="_blank">
+                      <span class="list-payments__icon list-payments__icon_size-20">
+                           <img src="{% static 'img/donate/paypal.svg' %}" alt="paypal" title="paypal">
+                      </span>
+                            PayPal
+                            <span class="list-payments__next"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#crypto">
+                          <span class="list-payments__icon">
+                               <img src="{% static 'img/donate/bitcoin.svg' %}" alt="bitcoin" title="bitcoin">
+                          </span>
+                            {% trans 'Крипто переказ' %}
+                            <span class="list-payments__next"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#donation">
+                              <span class="list-payments__icon">
+                                   <img src="{% static 'img/donate/swift.svg' %}" alt="swift" title="swift">
+                              </span>
+                            {% trans 'Банківський переказ' %}
+
+                            <span class="list-payments__next"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="about" data-aos="fade-up"  id="crypto">
+  <div class="container">
+      <div class="row">
+          <h2>{% trans 'Пожертвування в криптовалюті' %}</h2>
+          <div class="col-lg-12 mb-5 donation-bg">
+              <ul class="crypto-list">
+                  <li data-clipboard-text="3L656TR4TmuDoeoy1c7t4dPY9d2tXeJu5f">
+                      <div class="crypto-list__token">
+                          <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                          <h5>
+                              <img src="{% static 'img/donate/Bitcoin.png' %}" title="" alt="">
+                              BTC
+                          </h5>
+                          <p>3L656TR4TmuDoeoy1c7t4dPY9d2tXeJu5f</p>
+                      </div>
+
+                      <div class="crypto-list__copy">
+                          <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                    fill="#444"></path>
+                          </svg>
+                      </div>
+                  </li>
+                  <li data-clipboard-text="0xf2fa327436a878e66ea7e7655974ce92204807a4">
+                      <div class="crypto-list__token">
+                          <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                          <h5>
+                              <img src="{% static 'img/donate/Ethereum.png' %}" title="" alt="">
+                              ETH
+                          </h5>
+                          <p>0xf2fa327436a878e66ea7e7655974ce92204807a4</p>
+                      </div>
+
+                      <div class="crypto-list__copy">
+                          <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                    fill="#444"></path>
+                          </svg>
+                      </div>
+                  </li>
+                  <li data-clipboard-text="3L6HpTQL9YoP8GQMGUq5QzYsxPcAYMNQ3n">
+                      <div class="crypto-list__token">
+                          <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                          <h5>
+                              <img src="{% static 'img/donate/USD.png' %}" title="" alt="">
+                              USD₮ <span>(Omni)</span>
+                          </h5>
+                          <p>3L6HpTQL9YoP8GQMGUq5QzYsxPcAYMNQ3n</p>
+                      </div>
+
+                      <div class="crypto-list__copy">
+                          <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                    fill="#444"></path>
+                          </svg>
+                      </div>
+                  </li>
+                  <li data-clipboard-text="0x1303985a77d114aCb9b3fDd3bA908ba274D1BCdb">
+                      <div class="crypto-list__token">
+                          <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                          <h5>
+                              <img src="{% static 'img/donate/USD.png' %}" title="" alt="">
+                              USD₮ <span>(ERC-20)</span>
+                          </h5>
+                          <p>0x1303985a77d114aCb9b3fDd3bA908ba274D1BCdb</p>
+                      </div>
+
+                      <div class="crypto-list__copy">
+                          <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                    fill="#444"></path>
+                          </svg>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="row" id="donation">
+          <h2>{% trans 'Пожертвування банківським переказом' %}</h2>
+
+          <div class="col-lg-6 pt-4 donation-bg">
+              <h3>{% trans 'Пожертвування в UAH' %}</h3>
+              <ul class="donation-list">
+                  <li data-clipboard-text="5375414111734140">
+                      <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                      <div class="donation-list__info">
+                          <p class="donation-list__title">{% trans 'Переказ Monobank' %}:</p>
+                          <div class="donation-list__copy">
+                              <p class="donation-list__description">5375414111734140 – {% trans 'Михайло Андрєєв' %}</p>
+
+                              <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                        fill="#444"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </li>
+                  <li data-clipboard-text="UA183348510000000026007154801">
+                      <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                      <div class="donation-list__info">
+                          <p class="donation-list__title">IBAN Code (UAH):</p>
+
+                          <div class="donation-list__copy">
+                              <p class="donation-list__description">UA183348510000000026007154801</p>
+
+                              <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                        fill="#444"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </li>
+                  <li data-clipboard-text="ГРОМАДСЬКА ОРГАНІЗАЦІЯ “ДТІМ ФАУНДЕЙШН“">
+                      <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                      <div class="donation-list__info">
+                          <p class="donation-list__title">{% trans 'Отримувач' %}:</p>
+                          <div class="donation-list__copy">
+                              <p class="donation-list__description">{% trans "ГРОМАДСЬКА ОРГАНІЗАЦІЯ “ДТІМ ФАУНДЕЙШН“" %}</p>
+
+                              <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                        fill="#444"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </li>
+                  <li data-clipboard-text="44170922">
+                      <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                      <div class="donation-list__info">
+                          <p class="donation-list__title">{% trans 'ЄДРПОУ' %}:</p>
+
+                          <div class="donation-list__copy">
+                              <p class="donation-list__description">44170922</p>
+
+                              <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                        fill="#444"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </li>
+                  <li data-clipboard-text="АТ “ПУМБ”">
+                      <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                      <div class="donation-list__info">
+                          <p class="donation-list__title">{% trans 'Банк' %}:</p>
+                          <div class="donation-list__copy">
+                              <p class="donation-list__description">АТ “ПУМБ”</p>
+
+                              <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                        fill="#444"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-lg-6 pt-4 donation-bg">
+              <h3>SWIFT EUR / USD</h3>
+              <ul class="donation-list">
+                  <li data-clipboard-text="DTIM FOUNDATION">
+                      <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                      <div class="donation-list__info">
+                          <p class="donation-list__title">Company name:</p>
+
+                          <div class="donation-list__copy">
+                              <p class="donation-list__description">DTIM FOUNDATION</p>
+
+                              <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                        fill="#444"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </li>
+                  <li data-clipboard-text="UA183348510000000026007154801">
+                      <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                      <div class="donation-list__info">
+                          <p class="donation-list__title">IBAN Code (EUR/USD):</p>
+                          <div class="donation-list__copy">
+                              <p class="donation-list__description">UA183348510000000026007154801</p>
+
+                              <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                        fill="#444"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </li>
+                  <li data-clipboard-text="FIRST UKRAINIAN INTERNATIONAL BANK, 4 Andriivska Str., yiv, 04070, Ukraine">
+                      <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                      <div class="donation-list__info">
+                          <p class="donation-list__title">Name of the bank:</p>
+                          <div class="donation-list__copy">
+                              <p class="donation-list__description">FIRST UKRAINIAN INTERNATIONAL BANK, 4
+                                  Andriivska
+                                  Str.,
+                                  Kyiv, 04070, Ukraine</p>
+
+                              <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                        fill="#444"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </li>
+                  <li data-clipboard-text="FUIBUA2X">
+                      <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                      <div class="donation-list__info">
+                          <p class="donation-list__title">Bank SWIFT Code:</p>
+
+                          <div class="donation-list__copy">
+                              <p class="donation-list__description">FUIBUA2X</p>
+
+                              <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                        fill="#444"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </li>
+                  <li data-clipboard-text="UA 08302, Kyyivska obl., Boryspil, Myru St., 1A">
+                      <p class="copied-info">{% trans 'скопійовано' %}</p>
+
+                      <div class="donation-list__info">
+                          <p class="donation-list__title">Company address:</p>
+                          <div class="donation-list__copy">
+                              <p class="donation-list__description">UA 08302, Kyyivska obl., Boryspil, Myru St.,
+                                  1A</p>
+
+                              <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.5 21.8333H2.83333V6.66659C2.83333 6.02492 2.30833 5.49992 1.66667 5.49992C1.025 5.49992 0.5 6.02492 0.5 6.66659V21.8333C0.5 23.1166 1.55 24.1666 2.83333 24.1666H14.5C15.1417 24.1666 15.6667 23.6416 15.6667 22.9999C15.6667 22.3583 15.1417 21.8333 14.5 21.8333ZM20.3333 17.1666V3.16659C20.3333 1.88325 19.2833 0.833252 18 0.833252H7.5C6.21667 0.833252 5.16667 1.88325 5.16667 3.16659V17.1666C5.16667 18.4499 6.21667 19.4999 7.5 19.4999H18C19.2833 19.4999 20.3333 18.4499 20.3333 17.1666ZM18 17.1666H7.5V3.16659H18V17.1666Z"
+                                        fill="#444"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!-- <section class="about aos-init aos-animate" data-aos="fade-up">
     <div class="container">
 
       <div class="row">
@@ -91,5 +423,25 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 {% endblock content %}
+
+
+{% block tail %}
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/clipboard/clipboard.min.js' %}"></script>
+<script>
+  new ClipboardJS('.crypto-list li, .donation-list li');
+  $(document).ready(function() {
+      $(".crypto-list li, .donation-list li").on("click", function () {
+
+          $(this).find('.copied-info').addClass('active').delay(500).queue(function(next){
+              $(this).removeClass("active");
+              next();
+          });
+      });
+
+  });
+</script>
+
+{% endblock tail %}
