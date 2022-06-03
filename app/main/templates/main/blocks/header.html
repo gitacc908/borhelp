@@ -29,7 +29,8 @@
         {% endfor %}
       </form> -->
       <ul>
-        <form class="boxed boxed-mobile"  style="display: none;" >
+        <form class="boxed boxed-mobile"  style="display: none; margin-top: 20px;
+        margin-bottom: 30px;" >
           {% for language in languages %}
           <input onchange="location = this.value;" type="radio" id="{{language.code}}" name="lang-switcher" value="{% format_current_url_with_lang_code request language.code LANGUAGE_CODE %}" {% if language.code == LANGUAGE_CODE %} checked {% endif %}>
           <label for="{{language.code}}">{% if language.code == 'uk' %} Укр {% else %} Eng {% endif %}</label>
@@ -47,7 +48,7 @@
         <li><a {% if page == 'gallery' %}class="active"{% endif %}  href="{% url 'main:gallery' %}">{% trans 'Галерея' %}</a></li>
         <li><a {% if page == 'blogs' %}class="active"{% endif %}  href="{% url 'news:news' %}">{% trans 'Новини' %}</a></li>
         <li><a {% if page == 'contacts' %}class="active"{% endif %}  href="{% url 'main:contacts' %}">{% trans 'Контакти' %}</a></li>
-        <li><a {% if page == 'donate' %}class="active donation-btn btn-get-started"{% endif %}  href="{% url 'main:donate' %}">{% trans 'Пожертвування' %}</a></li>
+        <li><a {% if page == 'donate' %}class="active donation-btn btn-get-started"{% endif %} class="donation-btn btn-get-started" href="{% url 'main:donate' %}">{% trans 'Пожертвування' %}</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
       </ul>
