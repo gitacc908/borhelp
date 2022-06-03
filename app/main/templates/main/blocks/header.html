@@ -48,7 +48,7 @@
         <li><a {% if page == 'gallery' %}class="active"{% endif %}  href="{% url 'main:gallery' %}">{% trans 'Галерея' %}</a></li>
         <li><a {% if page == 'blogs' %}class="active"{% endif %}  href="{% url 'news:news' %}">{% trans 'Новини' %}</a></li>
         <li><a {% if page == 'contacts' %}class="active"{% endif %}  href="{% url 'main:contacts' %}">{% trans 'Контакти' %}</a></li>
-        <li><a {% if page == 'donate' %}class="active donation-btn btn-get-started"{% endif %} class="donation-btn btn-get-started" href="{% url 'main:donate' %}">{% trans 'Пожертвування' %}</a></li>
+        <li><a {% if page == 'donate' %}class="active donation-btn btn-get-started"{% endif %} style="width: fit-content;" class="donation-btn btn-get-started" href="{% url 'main:donate' %}">{% trans 'Пожертвування' %}</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
       </ul>
