@@ -274,7 +274,7 @@
   z-index: 1;
 }
 
-.donation-btn {
+/* .donation-btn {
   padding: 15px 20px!important;
   margin-left: 20px;
   max-width: 175px;
@@ -284,11 +284,38 @@
     margin-top: 0;
     max-width: initial;
   }
+} */
+
+@media (min-width: 992px){
+.donation-btn {
+    margin-top: 10px;
 }
-@media (min-width: 992px) {
-  .donation-btn {
-    margin-top: 0;
+}
+.donation-btn {
+    padding: 10px 20px!important;
+    margin-left: 20px;
+    max-width: 175px;
+    margin-top: 10px;
+}
+/*# sourceMappingURL=yana.css.map */
+
+@media(max-width:600px){
+  .navbar-mobile a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+    font-size: 20px;
+  } 
+  .boxed-mobile{
+    text-align: center;
+    padding-left: unset;
+    font-size: 20px;
+  }
+  .boxed-mobile > label{
+    font-size: 20px;
+  }
+  .donation-btn.btn-get-started{
+    margin:auto;
   }
 }
-
-/*# sourceMappingURL=yana.css.map */
