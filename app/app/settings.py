@@ -186,7 +186,7 @@ STATIC_URL = '/static/static/'
 STATIC_ROOT = '/vol/web/static'
 
 
-STATICFILES_DIRS = [ BASE_DIR / 'assets/']
+STATICFILES_DIRS = [BASE_DIR / 'assets/', BASE_DIR]
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
